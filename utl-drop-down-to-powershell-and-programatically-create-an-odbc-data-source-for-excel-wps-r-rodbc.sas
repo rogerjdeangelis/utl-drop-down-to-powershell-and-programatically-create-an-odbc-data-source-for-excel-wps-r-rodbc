@@ -83,7 +83,7 @@ Get-OdbcDsn;
 ');
 
 /*----  This seems to work to create multiline command                   ----*/
-%let longline=%str(Add-OdbcDsn -Name 'havelo-DriverName 'Microsoft Excel Driver (*.xls, *.xlsx, *.xlsm, *.xlsb)'
+%let longline=%str(Add-OdbcDsn -Name 'have' -DriverName 'Microsoft Excel Driver (*.xls, *.xlsx, *.xlsm, *.xlsb)'
  -DsnType 'User' -Platform '64-bit' -SetPropertyValue 'Dbq=d:\xls\have.xlsx');
 
 options ls=255;
